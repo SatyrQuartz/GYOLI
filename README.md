@@ -1,6 +1,23 @@
 # GYOLI: Generate Your Own Linux Image
 
 
+GYOLI.sh linuxdistro arch hardware diskblockdevice
+
+
+
+./GYOLI.sh debian-10 amd64 bios /dev/nbd0
+
+
+
+made for nbd0 
+
+
+
+
+--- Distro List ---
+
+debian-10
+
 --- Machine List ---
 
 bios (i386 and amd64)
