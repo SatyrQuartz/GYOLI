@@ -7,14 +7,14 @@ example:
 
 GYOLI_Hardware=bios GYOLI_Distro=debian-10 GYOLI_Arch=amd64 GYOLI_DiskDevice=/dev/nbd0 ./GYOLI.sh 
 
-
-
-GYOLI_Hardware
-GYOLI_Distro
-GYOLI_Arch
-GYOLI_DiskDevice
-
-
+#### Main settings:
+|Option|Value|default value|value format|desciption|
+|---|---|---|---|---|
+|GYOLI_Hardware|string|bios||Hardware Type|
+|GYOLI_Distro|string|debian-10||Distro|
+|GYOLI_Arch|string|amd64||Root Architecture|
+|GYOLI_DiskDevice|string|none||Disk Device|
+---
 
 --- Distro List ---
 
