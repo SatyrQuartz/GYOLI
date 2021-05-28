@@ -3,14 +3,16 @@
 
 GYOLI.sh linuxdistro arch hardware diskblockdevice
 
+example:
+
+GYOLI_Hardware=bios GYOLI_Distro=debian-10 GYOLI_Arch=amd64 GYOLI_DiskDevice=/dev/nbd0 ./GYOLI.sh 
 
 
-./GYOLI.sh debian-10 amd64 bios /dev/nbd0
 
-
-
-made for nbd0 
-
+GYOLI_Hardware
+GYOLI_Distro
+GYOLI_Arch
+GYOLI_DiskDevice
 
 
 

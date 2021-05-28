@@ -19,9 +19,17 @@ GYOLI_Disk_Setup () {
   w # write the partition table
   q # and we're done
 EOF
-  GYOLI_Disk_BootPart="${GYOLI_DiskDevice}p1"
-  GYOLI_Disk_RootPart="${GYOLI_DiskDevice}p2"
+  GYOLI_Disk_BootPart=$GYOLI_Partition1
+  GYOLI_Disk_RootPart=$GYOLI_Partition2
+  if [ ! -e $GYOLI_Disk_BootPart ]; then
+    echo "GYOLI | error | Disk: $GYOLI_Disk_BootPart not Found"
+    exit
+  fi
 	mkfs.ext4 $GYOLI_Disk_BootPart
+  if [ ! -e "$GYOLI_Disk_RootPart" ]; then
+    echo "GYOLI | error | Disk: $GYOLI_Disk_RootPart not Found"
+    exit
+  fi
 	mkfs.ext4 $GYOLI_Disk_RootPart
 }
 
